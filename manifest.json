@@ -2,7 +2,7 @@
     "name": "Tabuada",
     "short_name": "Tabuada",
     "description": "Aplicativo para verificar a tabuada dos numeros",
-    "start_url": "/",
+    "start_url": "/app_calculadora/",
     "scope": "/",
     "display": "standalone",
     "orientation": "portrait-primary",
