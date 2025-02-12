@@ -7,12 +7,18 @@
 // Registro do service worker
 
 // Se o navegador de internet suportar esse recurso
-if ('serviceWorker' in navigator) {
+/*if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
         .then(() => {
             console.log("Service worker registrado!")
         })
+}*/
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log("Service Worker registrado!", reg))
+        .catch(err => console.error("Erro ao registrar o Service Worker", err));
 }
+
 //==============================================================
 
 function gerarTabuada() {
