@@ -2,6 +2,20 @@
  * Atividade Botão do Panico
  * @author Patrick G 
  */
+
+//==============================================================
+// Registro do service worker
+
+// Se o navegador de internet suportar esse recurso
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/sw.js')
+        .then(() => {
+            console.log("Service worker registrado!")
+        })
+}
+//==============================================================
+
 function gerarTabuada() {
     var numero = document.getElementById("numero").value;
     var resultadoDiv = document.getElementById("resultado");
