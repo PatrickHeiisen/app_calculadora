@@ -12,6 +12,7 @@ self.addEventListener('install', (event) => {
                 cache.add('./app_calculadora/index.html')
                 cache.add('./app_calculadora/style.css')
                 cache.add('./app_calculadora/app.js')
+                cache.add('./app_calculadora/sw.js')
             })
     )
 })

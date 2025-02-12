@@ -8,8 +8,7 @@
 
 // Se o navegador de internet suportar esse recurso
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-        .register('/sw.js')
+    navigator.serviceWorker.register('/sw.js')
         .then(() => {
             console.log("Service worker registrado!")
         })
